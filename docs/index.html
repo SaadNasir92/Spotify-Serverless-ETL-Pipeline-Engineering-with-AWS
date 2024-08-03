@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Data Pipeline Project Demo</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f4f4f4; 
+            color: #333;
+            line-height: 1.6;
+        }
+        header, section { 
+            margin-bottom: 20px; 
+            padding: 20px; 
+            background: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 { 
+            font-size: 2em; 
+            color: #0056b3;
+        }
+        section h2 { 
+            font-size: 1.5em; 
+            color: #007BFF;
+            border-bottom: 2px solid #ddd; 
+            padding-bottom: 10px; 
+        }
+        video, img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .screenshot-caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spotify Serverless ETL Pipeline: AWS Data Engineering Project Demo</h1>
+        <p>Welcome to my project demo showcasing a fully serverless ETL pipeline built using AWS and Python. This project demonstrates advanced skills in solution architecture, ETL pipeline engineering, and leveraging AWS tools for seamless data integration and analytics. The pipeline pulls data from Spotify's API, transforms it, and stores it in S3, with Glue Crawlers and Athena enabling robust analytics. Explore the demo video below for a walkthrough or visit the GitHub repository for in-depth insights.</p>
+        <a href="https://github.com/SaadNasir92/Spotify-Serverless-ETL-Pipeline-Engineering-with-AWS.git" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #0056b3; color: white; text-align: center; text-decoration: none; border-radius: 5px; margin-top: 10px;">View on GitHub</a>
+    </header>
+    
+    <section id="demo">
+        <h2>Project Demo Video</h2>
+        <video controls>
+            <source src="demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <section id="overview">
+        <h2>Project Overview</h2>
+        <p>This project demonstrates a serverless ETL pipeline using AWS to automate data processing from Spotify. By leveraging AWS Lambda, S3, Glue, and Athena, the solution efficiently extracts, transforms, and analyzes daily top 50 songs playlist data, eliminating manual processes and ensuring data accuracy.</p>
+        <p>
+            The pipeline provides a scalable foundation for various use cases, from business analytics to potential AI model training, freeing up valuable resources and enabling faster decision-making.
+        </p>
+    </section>
+    
+    <section id="architecture">
+        <h2>Solution Architecture</h2>
+        <p>
+            The Spotify Serverless ETL pipeline leverages a fully automated architecture using AWS services to efficiently process Spotify API data. The process begins with AWS Lambda functions that are triggered by CloudWatch Events to pull data from the Spotify API. This data is then transformed using Python scripts running within the Lambda environment.
+        </p>
+        <p>
+            Once transformed, the data is stored in Amazon S3 buckets, which act as the central data repository. AWS Glue Crawlers automatically catalog the data, creating a schema that enables querying with Amazon Athena. This serverless architecture ensures seamless scalability and flexibility, allowing for integration with various downstream analytics tools and potential machine learning applications.
+        </p>
+        <img src="images/project_architecture.png" alt="Solution Architecture">
+        <p class="screenshot-caption">Figure 1: Pipeline architecture from data collection to query-ready.</p>
+    </section>
+    
+    <section id="data-analytics">
+        <h2>Data Analytics with Amazon Athena</h2>
+        <p>
+            At the heart of the Spotify Serverless ETL pipeline is Amazon Athena, which provides a powerful and efficient way to analyze the accumulation of the daily top 50 songs playlist. After extracting and storing detailed information about albums, songs, and artists in CSV files on Amazon S3, Athena allows for immediate querying and analysis.
+        </p>
+        <p>
+            This setup offers a serverless & scalable solution, enabling users to derive insights from the latest music trends without needing extensive infrastructure or traditional databases. With the ability to quickly run SQL queries on the data, businesses can explore streaming patterns, identify trends, and make informed decisions swiftly.
+        </p>
+        <p>
+            Looking ahead, the pipeline's integration with Athena opens up opportunities for further advancements, such as integrating with BI dashboarding tools for real-time analytics or using the data for training AI models. This flexibility ensures that the pipeline not only meets current analytical needs but also adapts to future business requirements.
+        </p>
+        <img src="images/data_insights.png" alt="Data Insights with Athena">
+        <p class="screenshot-caption">Figure 2: Querying top playlists with Amazon Athena for fast and actionable insights.</p>
+    </section>
+    
+
+    <section id="impact-and-future">
+        <h2>Impact and Future Potential</h2>
+        <p>
+            The Spotify Serverless ETL pipeline delivers significant benefits in terms of data processing efficiency and scalability. By automating the extraction and transformation of Spotify's top 50 playlists, the pipeline ensures data accuracy and provides immediate insights into music trends without the need for manual intervention.
+        </p>
+        <p>
+            This solution not only reduces operational overhead but also lays the groundwork for future developments. With its flexible architecture, the pipeline can easily integrate with additional AWS services or third-party tools to enhance data analytics capabilities. Potential future directions include:
+        </p>
+        <ul>
+            <li>Integration with BI tools for real-time dashboards and reports.</li>
+            <li>Developing AI models for predictive analytics based on music data trends.</li>
+            <li>Expanding the data scope to include user engagement metrics for more comprehensive analysis.</li>
+        </ul>
+        <p>
+            By prioritizing a serverless approach, this project exemplifies how modern data engineering practices can create scalable and adaptable solutions that meet evolving business needs.
+        </p>
+    </section>
+    
+    <section id="screenshots">
+        <h2>Screenshots</h2>
+        <img src="images/sample_routes.png" alt="Business Driven Analytics">
+        <p class="screenshot-caption">Figure 7: Sample SQL query on AWS Athena to analyze top 10 artists that show up often in this playlist, ranked and partitioned by date.</p>
+        <img src="images/workflow.png" alt="AWS Lambda">
+        <p class="screenshot-caption">Figure 6: Sample transformation logic deployed on AWS Lambda.</p>
+    </section>
+</body>
+</html>
