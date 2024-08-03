@@ -10,7 +10,7 @@ from datetime import datetime
 def make_csv_buffer(df):
     # convert df to string for s3 stream to read.
     csv_buffer = io.StringIO()
-    df.to_csv(csv_buffer, index=False)
+    df.to_csv(csv_buffer, index=False, encoding='utf-8')
     csv_content = csv_buffer.getvalue()
     return csv_content
 
