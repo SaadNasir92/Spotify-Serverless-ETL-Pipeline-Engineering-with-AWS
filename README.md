@@ -2,6 +2,8 @@
 
 Welcome to the Spotify Serverless ETL Pipeline project! This project demonstrates the creation of a fully serverless data pipeline using AWS services and Python to process Spotify's top 50 playlists data. It showcases data engineering skills, efficient architecture design, and future scalability potential for data analytics or AI model training.
 
+[View Detailed Project Demo Video](https://saadnasir92.github.io/Spotify-Serverless-ETL-Pipeline-Engineering-with-AWS/)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -10,12 +12,6 @@ Welcome to the Spotify Serverless ETL Pipeline project! This project demonstrate
 - [Data Analytics with Amazon Athena](#data-analytics-with-amazon-athena)
 - [Impact and Future Potential](#impact-and-future-potential)
 - [Screenshots](#screenshots)
-- [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -57,8 +53,7 @@ Amazon Athena plays a crucial role in the pipeline by enabling quick and efficie
 - **Business Insights**: Users can analyze trends, artist performance, and more, without needing extensive infrastructure.
 - **Future Possibilities**: The pipeline is poised for future enhancements, such as integration with BI tools for dashboards or AI models for predictive analytics.
 
-![Data Insights with Athena](images/data_insights.png)
-*Figure 2: Querying top playlists with Amazon Athena for fast and actionable insights.*
+
 
 ## Impact and Future Potential
 
@@ -72,8 +67,9 @@ The Spotify Serverless ETL Pipeline offers significant benefits and sets the sta
 
 Here are some screenshots demonstrating the key components of the project:
 
-![AWS Lambda Workflow](images/workflow.png)
+![AWS Lambda Workflow](docs/images/lambda_sample.png)
 *Figure 4: Sample transformation logic deployed on AWS Lambda.*
 
-![AWS Athena Query](images/sample_routes.png)
-*Figure 5: Sample SQL query on AWS Athena, analyzing top 10 artists ranked and partitioned by date.*
+![Data Insights with Athena](docs/images/athena_analysis.png)
+![Athena sample query](docs/images/athena_sample_query.png)
+*Figure 2: Querying top 3 artists ranked by appearances in the Spotify Daily Top 50 Playlist with Amazon Athena for fast and actionable insights.*
