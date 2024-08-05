@@ -67,9 +67,18 @@ The Spotify Serverless ETL Pipeline offers significant benefits and sets the sta
 
 Here are some screenshots demonstrating the key components of the project:
 
+<<<<<<< HEAD
 ![AWS Lambda Workflow](docs/images/lambdasample.png)
 *Figure 4: Sample transformation logic deployed on AWS Lambda.*
 
 ![Data Insights with Athena](docs/images/athenaanalysis.png)
 ![Athena sample query](docs/images/athenasamplequery.png)
 *Figure 2: Querying top 3 artists ranked by appearances in the Spotify Daily Top 50 Playlist with Amazon Athena for fast and actionable insights.*
+=======
+![AWS Lambda Workflow](docs/images/lambda_sample.png)
+*Figure 2: Sample transformation logic deployed on AWS Lambda.*
+
+![Data Insights with Athena](docs/images/athena_analysis.png)
+![Athena sample query](docs/images/athena_sample_query.png)
+*Figure 3: Querying top 3 artists ranked by appearances in the Spotify Daily Top 50 Playlist with Amazon Athena for fast and actionable insights.*
+>>>>>>> 1c30e63b99148b6b8f9cba08fa6280865bf5552a
