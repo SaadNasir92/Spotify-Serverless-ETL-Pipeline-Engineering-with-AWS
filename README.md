@@ -35,6 +35,7 @@ The pipeline architecture is built entirely on AWS, leveraging its serverless of
 - **Data Analysis**: Amazon Athena provides an SQL interface for querying and analyzing the data, allowing for dynamic insights into Spotify's music trends.
 
 ![Pipeline Architecture](docs/images/project-arch.png)
+
 *Figure 1: Pipeline architecture from data collection to analytics.*
 
 ## Data Processing and Storage
@@ -68,8 +69,10 @@ The Spotify Serverless ETL Pipeline offers significant benefits and sets the sta
 Here are some screenshots demonstrating the key components of the project:
 
 ![AWS Lambda Workflow](docs/images/lambdasample.png)
+
 *Figure 2: Sample transformation logic deployed on AWS Lambda.*
 
 ![Data Insights with Athena](docs/images/athenaanalysis.png)
 ![Athena sample query](docs/images/athenasamplequery.png)
+
 *Figure 3: Querying top 3 artists ranked by appearances in the Spotify Daily Top 50 Playlist with Amazon Athena for fast and actionable insights.*
